@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MultiFind</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>MultiFind</h1>
+      <p class="subtitle">Multi-Keyword Search</p>
+    </header>
+
+    <div class="input-section">
+      <div class="input-group">
+        <input type="text" id="keywordInput" placeholder="Enter keyword or phrase..." />
+        <button id="addKeyword" class="btn-primary">Add</button>
+      </div>
+    </div>
+
+    <div class="keywords-list" id="keywordsList">
+      <!-- Keywords will be dynamically added here -->
+    </div>
+
+    <div class="actions">
+      <button id="searchBtn" class="btn-search">Search & Highlight</button>
+      <button id="clearBtn" class="btn-clear">Clear All</button>
+    </div>
+
+    <div class="stats" id="stats">
+      <span id="totalMatches">0 matches found</span>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
